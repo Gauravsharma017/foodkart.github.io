@@ -1,0 +1,405 @@
+body {
+    margin: 0%;
+    /* display: flex;
+    justify-content: center; */
+}
+
+@font-face {
+    font-family: title;
+    src: url('https://fonts.googleapis.com/css2?family=Qwitcher+Grypen&display=swap');
+}
+
+.header {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-bottom-left-radius: 25%;
+    border-bottom-right-radius: 25%;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-style: oblique;
+    background-color: rgb(171, 81, 159);
+    box-shadow: 0px 5px 2pc rgba(0, 0, 0, 0.653);
+}
+
+.header:hover {
+    border-bottom: 1px groove rgb(135, 127, 127);
+    transition: all 1s;
+    background-color: bisque;
+}
+
+.title {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    text-shadow: -2px 2px rgb(128, 205, 218);
+    font-size: 48px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    font-style: italic;
+    margin-left: 20px;
+}
+
+#mode {
+    width: fit-content;
+    height: 45px;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 20;
+    border: 1px solid black;
+    right: 2%;
+}
+
+.option {
+    margin-top: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.item {
+    color: white;
+    padding: 1% 2% 1% 2%;
+    background-color: rgb(64, 62, 45);
+    /* border-color: rgb(215,195,165); */
+    border: 2px solid rgb(215, 195, 165);
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+
+
+}
+
+.item:hover {
+    transition: all .5s;
+    font-size: large;
+    background-color: rgb(49, 112, 102);
+    box-shadow: 5px 2px #6f6f6f;
+}
+
+.dish {
+    display: flex;
+    flex-wrap: wrap;
+    border-top-left-radius: 50px;
+    justify-content: space-around;
+    margin-top: 3%;
+    box-shadow: 0px 5px 2pc rgba(0, 0, 0, 0.653);
+
+    margin-left: 5%;
+    background-image: url(https://images.pexels.com/photos/326279/pexels-photo-326279.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 90%;
+    justify-content: space-around;
+}
+
+.dishimg {
+    box-shadow: 5px 5px 2pc black;
+    display: flex;
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    border-bottom-right-radius: 20%;
+    border-top-left-radius: 20%;
+    overflow: hidden;
+    width: 30%;
+    background: rgb(202, 28, 28);
+    height: 350px;
+    min-width: 280px;
+}
+
+.dishimg:hover {
+    box-shadow: 5px 5px 2pc rgb(144, 124, 57);
+    transition: all 1s;
+    height: 380px;
+    /* transform: rotate(20deg); */
+    /* transform: skew(20deg); */
+}
+
+.content {
+    font-size: 18px;
+    color: aliceblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: left;
+    align-items: center;
+    display: flex;
+    width: 40%;
+    text-shadow: 1px -1px rgba(0, 0, 0, 0.653);
+    min-width: 280px;
+}
+
+.dish1 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 10px;
+    border-top-left-radius: 50px;
+    justify-content: space-around;
+    margin-top: 2%;
+    z-index: 10;
+    margin-left: 5%;
+    background-image: url(https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 90%;
+    box-shadow: 0px 5px 2pc rgba(0, 0, 0, 0.653);
+
+    justify-content: space-around;
+}
+
+.welcome {
+    padding: 3% 0% 3% 0%;
+    display: flexbox;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 25px;
+    text-align: center;
+    width: 100%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+}
+
+.location {
+    display: flex;
+    margin-top: 2%;
+    padding: 3% 0% 3% 0%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    background-image: url(https://pngimg.com/uploads/gps/gps_PNG47.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* box-shadow:0px 5px 2pc rgba(0, 0, 0, 0.653) ; */
+}
+
+.place1 {
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 300px;
+    background-color: none;
+}
+
+.place1:hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #6f6f6f; */
+    /* transform: scale(); */
+    transition-property: all;
+    transition-duration: 1s;
+    transform: rotate(10deg);
+    box-shadow: 0px 5px 2pc rgba(0, 0, 0, 0.653);
+
+}
+
+.place2 {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 300px;
+    background-color: none;
+}
+
+.place2:hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #6f6f6f; */
+    /* transform: scale(); */
+    transition-property: all;
+    transition-duration: 1s;
+    transform: rotate(10deg);
+    box-shadow: 0px 5px 2pc rgba(0, 0, 0, 0.653);
+
+}
+
+.place3 {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 300px;
+    background-color: none;
+}
+
+.place3:hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #6f6f6f; */
+    /* transform: scale(); */
+    transition-property: all;
+    transition-duration: 1s;
+    transform: rotate(10deg);
+    box-shadow: 0px 5px 2pc rgba(0, 0, 0, 0.653);
+
+}
+
+.place4 {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 300px;
+    background-color: none;
+}
+
+.place4:hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #6f6f6f; */
+    /* transform: scale(); */
+    transition-property: all;
+    transition-duration: 1s;
+    transform: rotate(10deg);
+    box-shadow: 0px 5px 2pc rgba(0, 0, 0, 0.653);
+
+}
+
+.place5 {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 300px;
+    background-color: none;
+}
+
+.place5:hover {
+    /* background-color: #6f6f6f; */
+    /* transform: scale(); */
+    transition-property: all;
+    transition-duration: 1s;
+    transform: rotate(10deg);
+    box-shadow: 0px 5px 2pc rgba(0, 0, 0, 0.653);
+
+}
+
+.placename1 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    color: white;
+    font-size: 22px;
+    font-family: cursive;
+    text-shadow: 2px 2px black;
+    height: 100%;
+    background-image: url(https://faroutmagazine.co.uk/static/uploads/2021/04/A-guide-to-New-York-City-through-the-10-best-movie-locations.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.placename1:hover {
+    justify-content: center;
+    align-items: center;font-size: 27px;
+    transition-property: all;
+    transition-duration: 1s;
+    transform: rotate(-10deg);
+    box-shadow: 0px 5px 2pc rgba(0, 0, 0, 0.653);
+}
+
+.placename2 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    color: white;
+    font-size: 22px;
+    font-family: cursive;
+    text-shadow: 2px 2px black;
+    height: 100%;
+    background-image: url(https://www.pcclean.io/wp-content/uploads/2020/4/NNvMje.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.placename2:hover {justify-content: center;
+    align-items: center;font-size: 27px;
+    transition-property: all;
+    transition-duration: 1s;
+    transform: rotate(-10deg);
+    box-shadow: 0px 5px 2pc rgba(0, 0, 0, 0.653);
+}
+
+.placename3 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    color: white;
+    font-size: 22px;
+    font-family: cursive;
+    text-shadow: 2px 2px black;
+    height: 100%;
+    background-image: url(https://hapondo.qa/blog/wp-content/uploads/2020/11/AdobeStock_366522498-scaled.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.placename3:hover {justify-content: center;
+    align-items: center;font-size: 27px;
+    transition-property: all;
+    transition-duration: 1s;
+    transform: rotate(-10deg);
+    box-shadow: 0px 5px 2pc rgba(0, 0, 0, 0.653);
+}
+
+.placename4 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    color: white;
+    font-size: 22px;
+    font-family: cursive;
+    text-shadow: 2px 2px black;
+    color: white;
+    height: 100%;
+    background-image: url(https://wallup.net/wp-content/uploads/2017/03/16/230844-city-urban-New_York_City-sunset-cityscape-lights.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.placename4:hover {justify-content: center;
+    align-items: center;font-size: 27px;
+    transition-property: all;
+    transition-duration: 1s;
+    transform: rotate(-10deg);
+    box-shadow: 0px 5px 2pc rgba(0, 0, 0, 0.653);
+}
+
+.placename5 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    color: white;
+    font-size: 22px;
+    font-family: cursive;
+    text-shadow: 2px 2px black;
+    height: 100%;
+    background-image: url(https://getwallpapers.com/wallpaper/full/6/6/4/944121-gorgerous-milwaukee-city-wallpapers-1920x1200-download-free.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.placename5:hover {justify-content: center;
+    align-items: center;font-size: 27px;
+    transition-property: all;
+    transition-duration: 1s;
+    transform: rotate(-10deg);
+    box-shadow: 0px 5px 2pc rgba(0, 0, 0, 0.653);
+}
